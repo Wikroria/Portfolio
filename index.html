@@ -3,104 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css"/>
-    <link rel="stylesheet" href="styles/grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fullpage/fullpage.min.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/grid.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <title>CV</title>
 </head>
-<nav>
-    <div class="container">
+<body>
+<div id="fullpage">
+<div class="section s1" data-anchor="firstPage" id="section1">
+    <nav class="container">
         <div class="row">
-            <div class="col-md-6 loader">
-                <span>Wiktoria Ulidowska</span>
+            <div class="col-md-6 loader showup">
+            <span class="page-name">Wiktoria Ulidowska</span>
             </div>
-            <div class="col-md-6 social-media-icons">
+            <div class="col-md-6 social-media-icons showup" id="content-desktop">
                 <ul>
+                     <li>
+                        <a href="https://github.com/Wikroria" target="_blank"><img src="icons/github.svg" alt="GitHub" id="github"></a>
                     <li>
-                         <a href="https://github.com/Wikroria" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
-                    <li>
-                         <a href="#" target="_blank"><img src="icons/mail.svg" alt="Mail"></a>
+                        <a  href = "mailto: wiktoria.ulidowska@gmail.com" target="_blank"><img src="icons/mail.svg" alt="Mail"></a>
                     </li>
                     <li>
                          <a href="https://www.linkedin.com/in/wiktoria-ulidowska-273935199/" target="_blank"><img src="icons/linkedin.svg" alt="Linkedin"></a>
-                     </li>
+                    </li>
                 </ul>
+            </div>
         </div>
-    </div>
-    </div>
-</nav>
-<body>
-    <header class="intro">
-        <div class="container">
+    </nav>
+    <header>
+        <div class="container my-name">
            <div class="row">
-           <section class="col-md-12">
-            <h1>Hi! My name is Wiktoria.</h1>
-            <h2>I'm aspiring front-end developer.</h2>
-            <a href="/img/pineapp.jpg" download><button class="btn first">Download my CV</button></a>
+           <section class="col-md-12 col-xs-12">
+            <div id="content-desktop"> 
+                <h1 class="animation welcome">Hi!</h1>
+                <h1 class="animation welcome-name"> My name is Wiktoria.</h1>
+            </div>
+            <div id="content-mobile"> 
+                <h1>Hi!</h1>
+                <h1 class="my-name-mobile">My name is Wiktoria.</h1>
+            </div>
+            <h2 class="about">I'm aspiring front-end developer and UX designer.</h2>
+            <a href="/docs/Wiktoria Ulidowska.pdf" download><button class="btn first showup">Download my CV</button></a>
            </section>
            </div>
         </div>
+        <span  class="container scroll">
+            <div class="row">
+                <div class="col-md-12 showup">
+                    <p>Scroll down to see my projects</p>
+                </div>
+            </div>
+        </span>
     </header>
-<span  class="container scroll">
-    <div class="row">
-        <div class="col-md-12">
-            <p>Scroll down to see my projects</p>
-        </div>
-    </div>
-</span>
-<section class="work">
+</div>
+<section class="work section s2" data-anchor="secondPage"  id="section2">
     <div class="container">
         <div class="row">
             <div class="col-md-6 portfolio-heading">
-                <h2>Selected work</h2>
+                <h2>Selected works</h2>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container projects-section">
         <div id="project" class="row">
-            <div class="col-md-6">
-                <a href="#" title="" target="_blank"><img src="/img/pineapp.jpg" alt="office"></a>
+            <div class="col-md-6 col-xs-12">
+                <img src="/img/aliens.jpg" alt="aliens" id="project1-photo">
+                <a href="https://wikroria.github.io/animation_aliens/"  target="_blank" id="project1" class="color-rectangle"></a>
+
+            
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
                 <div class="project-description">
-                    <h3>Project 1</h3>
-                    <p>The text about me the text about me he text about me the text 
-                        about me he text about me the text about me he text about me
-                        the text about me he text about me the text about me he text
-                        about me the text about me he text about me 
-                        
-                        the text about me he text about me the text about me he text </p>
+                    <a href="https://wikroria.github.io/animation_aliens/"  target="_blank" class="project-link">
+                      <h3>Animation of the Aliens</h3>
+                    </a>
+                    <p>Animated svg file using pure CSS code. One day project made after learning CSS animations. I also used the Figma as a tool to edit and group the svg file. </p>
                 </div>
         </div>
         </div>
         <div id="project" class="row">
-            <div class="col-md-6">
-                <a href="#" title="" target="_blank"><img src="/img/pineapp.jpg" alt="office"></a>
+            <div class="col-md-6 col-xs-12">
+                <img src="/img/coffee.png" alt="coffee" id="project2-photo">
+                <a href="https://wikroria.github.io/GSAP_animation/" target="_blank" id="project2" class="color-rectangle"></a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
                 <div class="project-description">
-                    <h3>Project 2</h3>
-                    <p>The text about me the text about me he text about me the text 
-                        about me he text about me the text about me he text about me
-                        the text about me he text about me the text about me he text
-                        about me the text about me he text about me 
-                        
-                        the text about me he text about me the text about me he text </p>
+                    <a href="https://wikroria.github.io/animation_aliens/"  target="_blank" class="project-link">
+                    <h3>Animation of navigation</h3>
+                    </a>
+                    <p> Coffee shop animation of navigation created with GSAP library.
+                        Simple project created for practise JS animations. </p>
                 </div>
         </div>
     </div>
-    </div> 
 </section>
-</body>
-<footer>
-    <div class="social-media-icons">
-        <h2 class="footer-header"> Let's talk!</h2>
-         <ul>
+<footer class="section s3" data-anchor="3rdPage" id="section3">
+    <div>
+        <h2 class="footer-header"> Let's Chat!</h2>
+         <ul class="footer-icons">
             <li>
-                 <a href="https://github.com/Wikroria" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+                <span class="border"></span><a href="https://github.com/Wikroria" target="_blank"><img src="icons/github.svg" alt="GitHub"></a></span>
             <li>
-                 <a href="#" target="_blank"><img src="icons/mail.svg" alt="Mail"></a>
+                 <a href = "mailto: wiktoria.ulidowska@gmail.com" target="_blank"><img src="icons/mail.svg" alt="Mail"></a>
             </li>
             <li>
                  <a href="https://www.linkedin.com/in/wiktoria-ulidowska-273935199/" target="_blank"><img src="icons/linkedin.svg" alt="Linkedin"></a>
@@ -108,4 +113,10 @@
         </ul>
      </div>
 </footer>
+
+<script src="fullpage/scrolloverflow.min.js"></script>
+<script src="fullpage/fullpage.js"></script>
+<script src="app.js"></script>
+</div>
+</body>
 </html>
