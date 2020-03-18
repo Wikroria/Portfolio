@@ -26,7 +26,6 @@ h3{
     font-size: 1.2em;
     font-weight: 700;
     margin-bottom: 0;
-    color:#727483;
     font-style: normal;
 }
 h2{
@@ -44,6 +43,10 @@ p{
     color:#727483;
     font-style: normal;
 }
+a{
+    text-decoration: none;
+}
+
 li{
     font-family: 'Lato', sans-serif;
 }
@@ -59,7 +62,7 @@ nav{
 #content-desktop {display: block;}
 #content-mobile {display: none;}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
 
     #content-desktop {display: none;}
     #content-mobile {display: block;}
@@ -103,6 +106,7 @@ span a{
 .page-name{
     font-size:1.1em;
 }
+
  ul li a{
     text-decoration: none;
     font-size: 1em;
@@ -188,6 +192,7 @@ footer{
 #project1{
     background-image:url(/img/green.png);
     position: relative;
+
 }
 #project1-photo{
     z-index: 1;
@@ -202,7 +207,9 @@ footer{
 #project2{
     background-image:url(/img/yellow.jpg);
     position: relative;
+    text-decoration: none;
 }
+
 #project2-photo{
     z-index: 1;
     pointer-events: none;
@@ -223,11 +230,19 @@ footer{
     transform: scale(0.97);
 }
 
+
 .color-rectangle{
     display:block;
     max-width:100vh;
     height: 55vh;
-    transition: all .3s ease-in-out; }
+    transition: all .3s ease-in-out; 
+}
+
+@media screen and (max-width: 420px) {
+    .color-rectangle {
+       max-height: 35vh;
+    }
+}
 
 .projects-section > *+*{
     margin-top: 4em;
@@ -235,9 +250,8 @@ footer{
 .projects-section > *:last-child{
     margin-bottom: 5em;
 }
-.project-link{
-    text-decoration: none;
-}
+
+
 .project-description{
     padding-left: 2em;
 }

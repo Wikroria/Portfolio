@@ -5,7 +5,6 @@
 })*/
 
 var myFullpage = new fullpage('#fullpage', {
-    anchors: ['firstPage', 'secondPage', '3rdPage',],
     scrollOverflow: true,
     navigation: true,
     navigationPosition: 'right',
