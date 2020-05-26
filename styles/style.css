@@ -36,8 +36,8 @@ h2{
  }
 p{
     font-family: 'Roboto';
-    font-size: 1.1em;
-    line-height: 1.55;
+    font-size: 1em;
+    line-height: 28px;
     font-weight: 400;
     margin: 0;
     color:#727483;
@@ -111,14 +111,21 @@ span a{
     text-decoration: none;
     font-size: 1em;
  }
+ 
 .social-media-icons ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
 }
-.social-media-icons li{
-    margin: 0px 20px;
+.bm{
+    height: 100%;
+    width: 32px;
+    margin:0 20px;
+    cursor: pointer;
+}
+.git{
+    width: 24px;
 }
 /*
 @media screen and (max-width: 768px) {
@@ -165,18 +172,8 @@ footer{
     flex-direction: row;
     justify-content: center;
     list-style: none;
+    
 }
-.footer-icons li{
-    margin: 0px 20px 0px 20px;
-}
-
-.footer-icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-}
-
 
 /*Portfolio*/
 .portfolio-heading h2{
@@ -189,12 +186,7 @@ footer{
     padding:15px;
 }
 
-#project1{
-    background-image:url(../img/green.png);
-    position: relative;
-
-}
-#project1-photo{
+#project-photo{
     z-index: 1;
     pointer-events: none;
     position: absolute;
@@ -204,24 +196,20 @@ footer{
     transform: translate(-50%,-50%);
     box-shadow:0em 2px 6px rgba(0,0,0,0.3);
 }
-#project2{
-    background-image:url(../img/yellow.jpg);
+
+#project_doctor{
+    background-image:url(../img/home_page/green.png);
+    position: relative;
+}
+
+#project_aliens{
+    background-image:url(../img/home_page/peach.png);
     position: relative;
     text-decoration: none;
 }
 
-#project2-photo{
-    z-index: 1;
-    pointer-events: none;
-    position: absolute;
-    width: 75%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    box-shadow:0em 2px 6px rgba(0,0,0,0.3);
-}
-#project3{
-    background-image:url(../img/peach.png);
+#project_coffee{
+    background-image:url(../img/home_page/yellow.jpg);
     position: relative;
 }
 
@@ -310,26 +298,21 @@ ul {
 
 /*button*/
 .btn {
-    background-color: transparent;
     border: 2px solid black;
     border-radius: 2em;
-    color: black;
+    padding: 1.2em 2.5em;
     cursor: pointer;
+    background-color: transparent;
     font-size: 1em;
     font-weight: bold;
-    margin-top: 2vh;
-    margin-left: 0;
-    padding: 1.2em 2.5em;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-top: 2vh;
+    transition: .2s ease-in-out 0s;
+
 }
    .btn:hover {
     box-shadow: 0em 2px 6px rgba(0,0,0,0.3);
-    transform: scale(1.03, 1.03);
+    transform: scale(1.03);
     }
 
 

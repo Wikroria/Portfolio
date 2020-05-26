@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../subpages.styles/doctor.css"/>
+    <link rel="stylesheet" href="../styles/grid.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <title>Booking doctor appointment</title>
+</head>
+<body>
+    <header>
+       
+                <h1>Doctor's appointment</h1>
+                <p>Case study based on a challenge made by the zebza.net blog - it's a UI challenge but I focused on the
+                     UX side. The aim of the exercise was to design a part of the application used to make an appointment
+                      to the dentist. The application is used by regular clients of the office, who know their doctors. 
+                      They do not have to fill in any personal data. The entire exercise text on the blog zebza.net.
+                </p>
+                <p class="interjection">
+                    For this project, I set the following requirements:
+                </p>
+                <ul>
+                    <li>
+                        I will only do it in 1–2 days
+                    </li>
+                    <li>
+                        The deliverable is a basic prototype of part of the application used to make an appointment to the doctor
+                    </li>
+                </ul>
+                <h2>Obligatory elements of the exercise :</h2>
+                <ul>
+                    <li>
+                        Purpose of the visit
+                    </li>
+                    <li>
+                        Date of the visit (possible from Monday to Friday only)
+                    </li>
+                    <li>
+                        Time of the visit (possible only in time-blocks, from 10:00 to 15:00)
+                    </li>
+                    <li>
+                        Information about the price of the visit (payment in the office)
+                    </li>
+                    <li>
+                        Information on which doctor I am signing up for (dent. Monika Bogusławska-Dworek)
+                    </li>
+                </ul>
+        
+    </header>
+    <article>
+        <section>
+            <h2>My solution</h2>
+                    <p>I've decided to separate fields into different steps which change users' perception on how hard it is to complete and make the whole process looks easier. </p>
+                <div class="gallery">                   
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <img src="../img/medical_project/Select_purpose.png" alt="prototype-case-selection" id="photo">
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <img src="../img/medical_project/select_date_time.png" alt="prototype-case-treatment" id="photo">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <img src="../img/medical_project/confirm.png" alt="prototype-calendar" id="photo">
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <img src="../img/medical_project/confirmed.png" alt="prototype-confirm" id="photo">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <p>When selecting the date and time, we can see which day has still free dates. Free appointments are distinguished by their colour and greater contrast, making them more visible. With a summary, we can make sure that we chose everything the way we wanted it. In this step, we can also make changes. At the end of the process we get a confirmation that our visit has been recorded, with this view we can also easily return to the main screen.</p>
+        </section>
+            <section>
+                <h2>The problems</h2>
+                <ul>
+                    <li>In the task I considered only consultations in time blocks up to 3 p.m. If appointments would took place from 8 a.m. to 7 p.m. in shorter blocks, such a system wouldn't be functional. 
+                        Then it would be useful to divide avaiable into morning, afternoon and evening hours so that it would be easier and faster to find a convenient time for us.
+                    </li>
+                    <li>
+                        I didn't design the step of the selection of the facility or doctor, but the analysis showed me that they determining influence  on the speed and quality of user experience.
+                    </li>
+                </ul>
+                <h2>Solving the problems</h2>
+                <p>The task motivated me to get deeper into the appointment process. I decided to took a few steps back and analyze the process from the begining to the end with selecting the doctor, facility.
+                </p>
+            </section>
+            <section>
+                <h2>Research and analyzing</h2>
+          <p>For detailed process analysis I chose LUX MED application which is one of the most commonly used applications of this type in Poland. I went through the whole process as a customer journey.</p>
+           <div class="cognitive_walkthrou">
+            <img src="../img/customer_journey/present_persona.jpg" alt="present-persona" id="screenshot"> 
+            <img src="../img/customer_journey/app_home_page.jpg" alt="app-home-page" id="screenshot"> 
+            <img src="../img/customer_journey/select_city.jpg" alt="select-city" id="screenshot"> 
+            <img src="../img/customer_journey/service_problem.jpg" alt="service-problem" id="screenshot"> 
+            <img src="../img/customer_journey/choosing_hour.jpg" alt="choosing-hour" id="screenshot"> 
+            <img src="../img/customer_journey/book_appointment.jpg" alt="book-appointment" id="screenshot"> 
+            <img src="../img/customer_journey/booking.jpg" alt="booking" id="screenshot"> 
+            <img src="../img/customer_journey/customer journey.jpg" alt="customer_journey" id="screenshot"> 
+           </div>
+        </section>
+    <section class="improve">
+       <h2>Things to improve</h2>
+       <ul>
+           <li>home-page layout- we can use icons for quicker recognition of the type of consultation, there could be also app language selection</li>
+           <li>sequence in the form- selecting service after choosing the city and facility may cause errors</li>
+           <li>visit details - added information such as possible services and their price could be useful </li>
+           <li>doctor information- every doctor could have his picture, it would inspire more trust and make it easier to find the doctor we already know</li>
+           <li>booking confirmation - in this step a summary could be added so that the patient could check his choice and then confirm it</li>
+       </ul>
+    <h2>Example of solution</h2>
+    <div class="container gallery">
+        <div class="row ">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <img src="../img/medical_project_redesign/Specialization.png" alt="Select_specialization" id="photo">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <img src="../img/medical_project_redesign/Specialization_selected.png" alt="Specialization_selected" id="photo"> 
+            </div>
+        </div>
+        <p>I minimized task perception by splitting the form into steps and
+            I've used icons to make the election of a specialty quicker.</p>
+        <div class="row ">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <img src="../img/medical_project_redesign/Service.png" alt="Select_servise" id="photo">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <img src="../img/medical_project_redesign/Service_selected.png" alt="Service_selected" id="photo"> 
+            </div>
+        </div>
+            <p>The second step in the process is the choice of service. At this stage, you can check its approximate price.</p>
+        <div class="row ">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <img src="../img/medical_project_redesign/Visit_details.png" alt="Visit_details" id="photo">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <img src="../img/medical_project_redesign/Select_visit.png" alt="Select_visit" id="photo"> 
+            </div>
+        </div>
+        <p>I decided to add the possibility of choosing the time frame in which we are looking for a visit. This helps to make the search more precise.</p>
+        <div class="row ">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <img src="../img/medical_project_redesign/Summary.png" alt="Summary" id="photo">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <img src="../img/medical_project_redesign/Confirmed.png" alt="Confirmation" id="photo"> 
+            </div>
+        </div>
+        <p>Notification message at the end of form let the user know that she/he has done all that’s needed.</p>
+    </div>
+    </div>
+    </section>
+    <section>
+        <h2>What I've learned</h2>
+                <p>Starting with the task was a great start to focus on the appointment process. However, the process is so complicated that it was easier for me to think about it as a whole without skipping steps. Next time I'll give myself more time for analysing and testing.</p>
+    </section>
+    <div class="bottom-line"></div>
+    </article>
+    <footer>
+        <div>
+            <h2 class="footer-header"> Let's Chat!</h2>
+             <ul class="footer-icons">
+                <li>
+                    <a href="https://github.com/Wikroria" target="_blank"><div class="bm git" data-file="github"></div></a>
+                <li>
+                    <a  href = "mailto: wiktoria.ulidowska@gmail.com" target="_blank"><div class="bm" data-file="mail"></div></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/wiktoria-ulidowska-273935199/" target="_blank"><div class="bm" data-file="linkedin"></div></a>
+                 </li>
+            </ul>
+         </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.8/lottie.min.js"></script>
+    <script src="../doctor.js"></script>
+</body>
+</html>

@@ -19,13 +19,13 @@
             </div>
             <div class="col-md-6 social-media-icons showup" id="content-desktop">
                 <ul>
-                     <li>
-                        <a href="https://github.com/Wikroria" target="_blank"><img src="icons/github.svg" alt="GitHub" id="github"></a>
+                     <li >
+                     <a href="https://github.com/Wikroria" target="_blank"><div class="bm git" data-file="github"></div></a>
                     <li>
-                        <a  href = "mailto: wiktoria.ulidowska@gmail.com" target="_blank"><img src="icons/mail.svg" alt="Mail"></a>
+                        <a  href = "mailto: wiktoria.ulidowska@gmail.com" target="_blank"><div class="bm" data-file="mail"></div></a>
                     </li>
                     <li>
-                         <a href="https://www.linkedin.com/in/wiktoria-ulidowska-273935199/" target="_blank"><img src="icons/linkedin.svg" alt="Linkedin"></a>
+                         <a href="https://www.linkedin.com/in/wiktoria-ulidowska-273935199/" target="_blank"><div class="bm" data-file="linkedin"></div></a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@
                 <h1>Hi!</h1>
                 <h1 class="my-name-mobile">My name is Wiktoria.</h1>
             </div>
-            <h2 class="about">I'm aspiring front-end developer and UX designer.</h2>
+            <h2 class="about">I'm aspiring UX designer and front-end developer.</h2>
             <a href="docs/Wiktoria Ulidowska CV.pdf" download><button class="btn first showup">Download my CV</button></a>
            </section>
            </div>
@@ -68,8 +68,24 @@
     <div class="container projects-section">
         <div id="project" class="row">
             <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
-                <img src="img/aliens.jpg" alt="aliens" id="project1-photo">
-                <a href="https://wikroria.github.io/animation_aliens/"  target="_blank" id="project1" class="color-rectangle"></a>
+                <img src="img/home_page/doctor_appointment.png" alt="doctor-appointment" id="project-photo">
+                <a href="subpages.html/doctor_appointment.html"  target="_blank" id="project_doctor" class="color-rectangle"></a>
+
+            
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                <div class="project-description">
+                    <a href="subpages.html/doctor_appointment.html" class="project-link">
+                      <h3>Booking doctor appointment</h3>
+                    </a>
+                    <p>UX case study project of booking an doctor appointment from mobile application. Chellenge inspired by zebza.com blog. </p>
+                </div>
+        </div>
+        </div>
+        <div id="project" class="row">
+            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                <img src="img/home_page/aliens.jpg" alt="aliens-animation" id="project-photo">
+                <a href="https://wikroria.github.io/animation_aliens/"  target="_blank" id="project_aliens" class="color-rectangle"></a>
 
             
             </div>
@@ -84,8 +100,8 @@
         </div>
         <div id="project" class="row">
             <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
-                <img src="img/coffee.png" alt="coffee" id="project2-photo">
-                <a href="https://wikroria.github.io/GSAP_animation/" target="_blank" id="project2" class="color-rectangle"></a>
+                <img src="img/home_page/coffee.png" alt="menu-animation" id="project-photo">
+                <a href="https://wikroria.github.io/GSAP_animation/" target="_blank" id="project_coffee" class="color-rectangle"></a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
                 <div class="project-description">
@@ -103,12 +119,12 @@
         <h2 class="footer-header"> Let's Chat!</h2>
          <ul class="footer-icons">
             <li>
-                <span class="border"></span><a href="https://github.com/Wikroria" target="_blank"><img src="icons/github.svg" alt="GitHub"></a></span>
+                <a href="https://github.com/Wikroria" target="_blank"><div class="bm git" data-file="github"></div></a>
             <li>
-                 <a href = "mailto: wiktoria.ulidowska@gmail.com" target="_blank"><img src="icons/mail.svg" alt="Mail"></a>
+                <a  href = "mailto: wiktoria.ulidowska@gmail.com" target="_blank"><div class="bm" data-file="mail"></div></a>
             </li>
             <li>
-                 <a href="https://www.linkedin.com/in/wiktoria-ulidowska-273935199/" target="_blank"><img src="icons/linkedin.svg" alt="Linkedin"></a>
+                <a href="https://www.linkedin.com/in/wiktoria-ulidowska-273935199/" target="_blank"><div class="bm" data-file="linkedin"></div></a>
              </li>
         </ul>
      </div>
@@ -117,6 +133,8 @@
 <script src="fullpage/scrolloverflow.min.js"></script>
 <script src="fullpage/fullpage.js"></script>
 <script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.8/lottie.min.js"></script>
+<script src="index.js"></script>
 </div>
 </body>
 </html>
