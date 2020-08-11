@@ -1,0 +1,50 @@
+/*hero contest*/
+.design_proces {
+  list-style: none;
+  padding: 0;
+  padding: 0;
+}
+
+#design_proces .container {
+  padding: 0;
+}
+.design_proces p {
+  font-size: 0.9em;
+}
+.conclusions {
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+.concept p {
+  font-size: 0.8em;
+}
+.concept {
+  padding: 0;
+}
+#concept .container {
+  padding: 0;
+}
+
+#seniors_photo {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 1em;
+}
+.map_svg {
+  height: 60%;
+}
+
+.description {
+  font-size: 0.9em;
+  line-height: 22px;
+}
+.number_svg {
+  width: 50%;
+}
+.analysis_doc {
+  width: 100%;
+}
+.survey {
+  padding: 0;
+}
