@@ -38,9 +38,9 @@ h2 {
 }
 h4 {
   font-family: "Lato";
-  font-size: 1.5em;
+  font-size: 1.1em;
+  font-weight: 700;
   font-style: normal;
-  font-weight: normal;
 }
 p {
   font-family: "Roboto";
@@ -204,7 +204,10 @@ footer {
   transform: translate(-50%, -50%);
   box-shadow: 0em 2px 6px rgba(0, 0, 0, 0.3);
 }
-
+#project_election{
+  background-image: url(../img/home_page/yellow_2.png);
+  position: relative;
+}
 #project_silent_alarm {
   background-image: url(../img/home_page/red.png);
   position: relative;
@@ -243,7 +246,7 @@ footer {
 .color-rectangle {
   display: block;
   max-width: 100vh;
-  height: 55vh;
+  height: 50vh;
   transition: all 0.3s ease-in-out;
 }
 
